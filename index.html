@@ -1,19 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
-</head>
-<body>
-    <h1>Hello, World!</h1>
-    <script>
-        // add two numbers //
-        const num1 = 5;
-        const num2 = 10;
-        const sum = num1 + num2;    
-        // display the sum //
-        document.write(`The sum of ${num1} and ${num2} is ${sum}.`);
-    </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/norse" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left side with background image -->
+      <div class="left-half">
+        <div class="logo-container">
+          <img src="odin-logo.png" alt="Odin Logo" class="logo" />
+          <h1 class="logo-text">ODIN</h1>
+        </div>
+
+        <footer class="left-footer">
+          <p>Background image by Halie West on Unsplash</p>
+        </footer>
+        <!-- Footer in the left container -->
+      </div>
+
+      <!-- Right side with text, form, and login button -->
+      <div class="right-half">
+        <!-- Text container with two paragraphs -->
+        <div class="text-container">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            now to get started.
+          </p>
+          <p>You <em>know</em> you want to.</p>
+        </div>
+
+        <!-- Form container -->
+        <div class="form-container">
+          <h2>Let's do this!</h2>
+          <form>
+            <div class="form-row">
+              <label for="fname">First name:</label>
+              <label for="lname">Last name:</label>
+              <input type="text" placeholder="First Name" required />
+              <input type="text" placeholder="Last Name" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email:</label>
+              <label for="phonenumber">Phone Number:</label>
+              <input type="email" placeholder="Email" required />
+              <input type="tel" placeholder="Phone Number" required />
+            </div>
+            <div class="form-row">
+              <label for="password">Password:</label>
+              <label for="password">Confirm Password:</label>
+              <input type="password" placeholder="Password" required />
+              <input type="password" placeholder="Confirm Password" required />
+            </div>
+              <!-- Error message placeholder -->
+            <p id="password-error" class="error-message" style="display: none;">Passwords do not match</p>
+          
+          </form>
+        </div>
+
+        <!-- Login button container -->
+        <div class="button-container">
+          <button type="submit">Create Account</button>
+        </div>
+        <div>
+          <p>Already have an account?<span class="highlight">Log in</span></p>
+        </div>
+      </div>
+    </div> 
+  </body>
 </html>
